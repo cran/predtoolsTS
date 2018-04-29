@@ -203,9 +203,10 @@ modl.trControl <- function(initialWindow,horizon,fixedWindow,givenSummary=FALSE)
 #' @export
 #' @examples
 #' \donttest{
-#' modl.dataMining(form=Class ~ .,tserieDF=modl.tsToDataFrame(AirPassengers,formula=c(1:20))
-#' ,algorithm='rpart',timeControl=modl.trControl(initialWindow=30,horizon=15
-#' ,fixedWindow=TRUE,givenSummary=TRUE))
+#' modl.dataMining(form=Class ~ .,
+#'  tserieDF=modl.tsToDataFrame(AirPassengers,formula=c(1:20)),
+#'  algorithm='rpart',
+#'  timeControl=modl.trControl(initialWindow=30,horizon=15,fixedWindow=TRUE))
 #' }
 modl.dataMining <- function(form,tserieDF,algorithm,timeControl,metric="RMSE",maximize=FALSE){
   return (caret::train(form,data=tserieDF,method=algorithm,trControl=timeControl,metric=metric,maximize=maximize))

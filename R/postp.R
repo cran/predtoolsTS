@@ -81,7 +81,7 @@ postp <- function(prd,pre){
   return (pred(tserie=tserie,predictions=predictions))
 }
 
-#' Undo logaritmic transformation
+#' Undo logarithmic transformation
 #'
 #' Uses exponent to reverse the logarithm
 #'

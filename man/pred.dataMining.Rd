@@ -18,9 +18,8 @@ A \code{ts} object containing the predictions.
 Performs predictions over a data mining model using the \code{caret::predict.train} function.
 }
 \examples{
-\donttest{
-pred.dataMining(modl(prep(AirPassengers),method='dataMining',algorithm='rpart'),n.ahead=15)
-}
+m <- modl(prep(AirPassengers),method='dataMining',algorithm='rpart')
+pred.dataMining(m,n.ahead=15)
 }
 \author{
 Alberto Vico Moreno

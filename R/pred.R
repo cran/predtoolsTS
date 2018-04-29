@@ -86,9 +86,8 @@ pred.arima <- function(model,n.ahead){
 #' @author Alberto Vico Moreno
 #' @export
 #' @examples
-#' \donttest{
-#' pred.dataMining(modl(prep(AirPassengers),method='dataMining',algorithm='rpart'),n.ahead=15)
-#' }
+#' m <- modl(prep(AirPassengers),method='dataMining',algorithm='rpart')
+#' pred.dataMining(m,n.ahead=15)
 pred.dataMining <- function(model,n.ahead){
   if(!methods::is(model,"modl")) stop("Not a modl object")
   if(model$method != "dataMining") stop("model method has to be dataMining.")

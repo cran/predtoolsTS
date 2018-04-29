@@ -28,9 +28,10 @@ Train the time serie(as data frame) to build the model.
 }
 \examples{
 \donttest{
-modl.dataMining(form=Class ~ .,tserieDF=modl.tsToDataFrame(AirPassengers,formula=c(1:20))
-,algorithm='rpart',timeControl=modl.trControl(initialWindow=30,horizon=15
-,fixedWindow=TRUE,givenSummary=TRUE))
+modl.dataMining(form=Class ~ .,
+ tserieDF=modl.tsToDataFrame(AirPassengers,formula=c(1:20)),
+ algorithm='rpart',
+ timeControl=modl.trControl(initialWindow=30,horizon=15,fixedWindow=TRUE))
 }
 }
 \author{

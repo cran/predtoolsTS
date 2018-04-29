@@ -2,7 +2,7 @@
 % Please edit documentation in R/postp.R
 \name{postp.homogenize.log}
 \alias{postp.homogenize.log}
-\title{Undo logaritmic transformation}
+\title{Undo logarithmic transformation}
 \usage{
 postp.homogenize.log(tserie)
 }

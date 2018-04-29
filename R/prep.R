@@ -142,9 +142,9 @@ prep <- function(tserie,homogenize.method='log'
   return (obj)
 }
 
-#' Logaritmic transformation
+#' Logarithmic transformation
 #'
-#' Performs a logaritmic transformation to a time serie.
+#' Performs a logarithmic transformation to a time serie.
 #'
 #' @param tserie a \code{ts} object
 #' @return \code{ts} object with transformed time serie
